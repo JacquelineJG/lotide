@@ -6,11 +6,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-function eqArrays(a, b) {
-  return Array.isArray(a) &&
-    Array.isArray(b) &&
-    a.length === b.length &&
-    a.every((val, index) => val === b[index]);
+function eqArrays(arrOne, arrTwo) {
+  return Array.isArray(arrOne,) &&
+    Array.isArray(arrTwo) &&
+    arrOne,.length === arrTwo.length &&
+    arrOne,.every((val, index) => val === arrTwo[index]);
 }
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
