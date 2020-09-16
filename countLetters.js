@@ -14,4 +14,4 @@ const countLetters = function(string) {
   return obj
 }
 
-countLetters("lighthouse in the house")
+ 
