@@ -9,12 +9,13 @@ console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]))
 
 function assertArraysEqual (paramOne, paramTwo) {
   if (eqArrays(paramOne, paramTwo)){
-    console.log(`✅✅✅ Assertion passed`);
+    console.log(`✅✅✅ Assertion passed: ${paramOne} === ${paramTwo}`);
     
   } else {
-    console.log(`🛑🛑🛑 Assertion failed`)
+    console.log(`🛑🛑🛑 Assertion failed: ${paramOne} !== ${paramTwo}`)
   } 
 }
+
 
  
 
