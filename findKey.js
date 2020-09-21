@@ -24,7 +24,7 @@ const findKey = (obj, check) => {
   }
   return null;
 } 
-
+/*
 const obj = {
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
@@ -45,5 +45,5 @@ let potato = findKey({
 }, x => x.stars === 2) 
 
 console.log(potato)
-
+*/
 module.exports = findKey;

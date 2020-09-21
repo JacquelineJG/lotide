@@ -16,11 +16,11 @@ const whoIsTheVampire = {
   Jacob:  "Werewolf"
 };
 
-
+/*
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 assertEqual(findKeyByValue(whoIsTheVampire, "Vampire"), "Edward");
 assertEqual(findKeyByValue(whoIsTheVampire, "Human"), "Bella");
-
+*/
 module.exports = findKeyByValue;

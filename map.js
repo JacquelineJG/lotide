@@ -13,13 +13,13 @@ const map = function(array, callback) {
   }
   return results;
 }
-
+/*
 const words = ["ground", "control", "to", "major", "tom"]; 
 
 const results1 = map(words, word => word[2]);
 console.log(results1);
 assertArraysEqual(results1, [ 'o', 'n', undefined, 'j', 'm' ])
-
+*/
 
 
 module.exports = map;
