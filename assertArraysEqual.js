@@ -1,11 +1,5 @@
-function eqArrays(arrOne, arrTwo) {
-  return Array.isArray(arrOne) &&
-    Array.isArray(arrTwo) &&
-    arrOne.length === arrTwo.length &&
-    arrOne.every((val, index) => val === arrTwo[index]);
-}
+const eqArrays = require('./eqArrays');
 
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]))
 
 function assertArraysEqual (paramOne, paramTwo) {
   if (eqArrays(paramOne, paramTwo)){
@@ -17,7 +11,8 @@ function assertArraysEqual (paramOne, paramTwo) {
 }
 
 
- 
+module.exports = assertArraysEqual;
+
 
 
 
