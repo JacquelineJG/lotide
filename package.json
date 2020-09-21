@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jacquelinejg/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide is a mini clone of the Lodash library built for learning purposes",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/JacquelineJG/lotide.git"
   },
-  "author": "",
+  "author": {"name": "Jacqueline Johnstone-Gruba"},
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JacquelineJG/lotide/issues"

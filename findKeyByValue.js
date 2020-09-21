@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+//const assertEqual = require('./assertEqual');
 
 function findKeyByValue(object, value) {
   return Object.keys(object).find(key => object[key] === value);

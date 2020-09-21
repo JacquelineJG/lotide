@@ -1,6 +1,7 @@
 
 //console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]))
-const assertArraysEqual = require('./assertArraysEqual');
+
+//const assertArraysEqual = require('./assertArraysEqual');
 
 function without (source, itemsToRemove) {
   let filtered = source.filter(function(e) { 
