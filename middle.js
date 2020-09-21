@@ -1,21 +1,3 @@
-function eqArrays(arrOne, arrTwo) {
-  return Array.isArray(arrOne) &&
-    Array.isArray(arrTwo) &&
-    arrOne.length === arrTwo.length &&
-    arrOne.every((val, index) => val === arrTwo[index]);
-}
-
-
-
-function assertArraysEqual (paramOne, paramTwo) {
-  if (eqArrays(paramOne, paramTwo)){
-    console.log(`✅✅✅ Assertion passed: ${paramOne} === ${paramTwo}`);
-    
-  } else {
-    console.log(`🛑🛑🛑 Assertion failed: ${paramOne} !== ${paramTwo}`)
-  } 
-}
-
 const middle = function(arr) {
   //will need to push found middle elements into new empty array
   let middleOfArray = [];
@@ -39,5 +21,6 @@ const middle = function(arr) {
     }
    return middleOfArray
 }
-console.log(middle([1, 2, 3, 4, 5, 6]));
-assertArraysEqual((middle([1, 2, 3, 4, 5, 6])), [3, 4]);
+
+module.exports = middle;
+
