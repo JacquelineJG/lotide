@@ -11,22 +11,7 @@ const takeUntil = function(array, callback) {
   }return emptyArr;
 } */
 
-function eqArrays(arrOne, arrTwo) {
-  return Array.isArray(arrOne) &&
-    Array.isArray(arrTwo) &&
-    arrOne.length === arrTwo.length &&
-    arrOne.every((val, index) => val === arrTwo[index]);
-}
-
-
-function assertArraysEqual (paramOne, paramTwo) {
-  if (eqArrays(paramOne, paramTwo)){
-    console.log(`✅✅✅ Assertion passed: ${paramOne} === ${paramTwo}`);
-    
-  } else {
-    console.log(`🛑🛑🛑 Assertion failed: ${paramOne} !== ${paramTwo}`)
-  } 
-}
+const assertArraysEqual = require('./assertArraysEqual');
 
 
 const takeUntil = function(array, callback) {
@@ -53,3 +38,5 @@ const results2 = takeUntil(data2, x => x === ',');
 //console.log(results2);
 
 assertArraysEqual(["I've", "been", "to", "Hollywood"], results2)
+
+module.exports = takeUntil;

@@ -1,19 +1,4 @@
-function eqArrays(arrOne, arrTwo) {
-  return Array.isArray(arrOne) &&
-    Array.isArray(arrTwo) &&
-    arrOne.length === arrTwo.length &&
-    arrOne.every((val, index) => val === arrTwo[index]);
-}
-
-
-function assertArraysEqual (paramOne, paramTwo) {
-  if (eqArrays(paramOne, paramTwo)){
-    console.log(`✅✅✅ Assertion passed: ${paramOne} === ${paramTwo}`);
-    
-  } else {
-    console.log(`🛑🛑🛑 Assertion failed: ${paramOne} !== ${paramTwo}`)
-  } 
-}
+const assertArraysEqual = require('./assertArraysEqual');
 
 const letterPositions = function(sentence) {
   let results = {};
@@ -32,3 +17,5 @@ const letterPositions = function(sentence) {
 };
 console.log(letterPositions("hello hi"))
 assertArraysEqual(letterPositions("hello").e, [1]);
+
+module.exports = letterPositions;
